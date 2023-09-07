@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 100rem;
+  margin: 0 auto;
+  font-family: cursive;
+  padding: 0 3rem;
+}
+
+.header {
+  margin-top: 1rem;
+  background-color: #181818;
+  color: #e9e9e9;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.container {
+  margin-top: 1rem;
+  background-color: #cccc;
+  border-radius: 9px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 3rem;
+  padding: 3rem 0;
+}
+
+label {
+  font-size: 1.4rem;
+}
+
+span {
+  font-size: 1.8rem;
+  color: rgb(41, 41, 130);
+  font-weight: 600;
+}
+
+.picture {
+  position: relative;
+  width: 100%;
+}
+
+.picture label {
+  position: absolute;
+  color: rgb(41, 41, 130);
+  top: 0.5rem;
+  left: 1rem;
+  font-weight: bold;
+}
+
+img {
+  width: inherit;
+  border: 1px solid rgb(41, 41, 130);
+  border-radius: 9px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer {
+  background-color: #181818;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: #e9e9e9;
+  font-size: 1.6rem;
+  transition: all;
+  transition-duration: 500ms;
+}
+
+a:hover {
+  font-weight: 600;
+  color: #cccc;
+}
+
+@media only screen and (max-width: 34.4rem) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  span {
+    font-size: 1.4rem;
+  }
+
+  label {
+    font-size: 1.2rem;
+  }
+}
